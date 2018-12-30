@@ -30,8 +30,8 @@ void MyTextEdit::slotKeyPress(QString key)
         mp->setVolume(100);
         mp->setMedia(QUrl::fromLocalFile(file.fileName()) );
         mp->play();
-        emit signalLastLetter(key);
     }
+    emit signalLastLetter(key);
 }
 void MyTextEdit::slotFontChanged(QString font)
 {
